@@ -1,0 +1,18 @@
+config {
+  type: "table",
+  schema: "silver",
+  tags: ['silver'],
+  assertions: {
+    uniqueKey: ["order_id"],
+    nonNull: ["order_id", "customer_id"]
+  }
+}
+
+SELECT
+  CAST(order_id AS STRING) AS order_id,
+  CAST(customer_id AS STRING) AS customer_id,
+  CAST(order_date AS DATE) AS order_date,
+  SAFE_CAST(amount AS FLOAT64) AS amount,
+  LOWER(status) AS status
+FROM ${ref("raw_orders")}
+WHERE amount > 0  -- On élimine les erreurs de saisie

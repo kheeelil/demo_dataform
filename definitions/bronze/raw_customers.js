@@ -1,0 +1,1 @@
+declare({ database: "rock-bulwark-494112-j0", schema: "raw_data", name: "raw_customers" });

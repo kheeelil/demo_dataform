@@ -1,0 +1,11 @@
+config {
+    type: "table",
+    schema: "silver",
+    tags: ['silver']
+}
+
+SELECT
+  CAST(customer_id AS STRING) AS customer_id,
+  CAST(TRIM(LOWER(email)) AS STRING) AS email,
+  CAST(UPPER(country) AS STRING) AS country
+FROM ${ref("raw_customers")}

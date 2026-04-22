@@ -1,0 +1,4 @@
+defaultProject: rock-bulwark-494112-j0
+defaultDataset: dataform
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.42
