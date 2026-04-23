@@ -1,6 +1,6 @@
-/*
 config {
   type: "assertion",
+  tags: ["assertion"]
 }
 
 SELECT
@@ -9,5 +9,3 @@ SELECT
 FROM ${ref("stg_customers")}
 GROUP BY 1
 HAVING nombre_de_doublons > 1
-*/
---test
