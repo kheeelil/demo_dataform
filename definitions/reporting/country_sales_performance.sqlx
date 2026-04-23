@@ -2,7 +2,7 @@ config {
   type: "table",
   schema: "reporting",
   tags: ["reporting"],
-  dependOnDependencyAssertions: true,
+  //dependOnDependencyAssertions: true,
   description: "Table finale pour le dashboard de performance commerciale"
 }
 

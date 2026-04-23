@@ -1,6 +1,5 @@
 config {
   type: "assertion",
-  description: "Vérifie qu'il n'y a aucun doublon de customer_id dans la table staging"
 }
 
 SELECT
