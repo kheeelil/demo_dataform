@@ -16,3 +16,5 @@ INNER JOIN ${ref("stg_customers")} AS c ON o.customer_id = c.customer_id
 WHERE o.status = 'completed'
 GROUP BY c.country
 ORDER BY total_revenue 
+
+-- from demo
