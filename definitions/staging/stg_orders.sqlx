@@ -1,7 +1,7 @@
 config {
   type: "table",
-  schema: "silver",
-  tags: ['silver'],
+  schema: "staging",
+  tags: ['staging'],
   assertions: {
     uniqueKey: ["order_id"],
     nonNull: ["order_id", "customer_id"]

@@ -1,6 +1,8 @@
 config {
   type: "table",
-  schema: "gold",
+  schema: "reporting",
+  tags: ["reporting"],
+  dependOnDependencyAssertions: true,
   description: "Table finale pour le dashboard de performance commerciale"
 }
 
